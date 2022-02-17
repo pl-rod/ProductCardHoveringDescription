@@ -1,0 +1,58 @@
+@import url("https://fonts.googleapis.com/ccs2?family=Poppins:wght@500&display=swap");
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Poppins", sans-serif;
+}
+body{
+    display:flex;
+    justify-content: center;
+    height:100vh;
+    background-color: #000;
+}
+
+.card{
+    margin-top:100px;
+    width:250px;
+    height:250px;
+    box-shadow: 0 10px 10px rgba(0,0,0, 0.212);
+    background:#fff;
+    display: flex;
+    justify-content: center;
+    border-radius: 20px;
+    position: relative;
+    transition: all .4s;
+}
+
+.card img{
+    width: 250px;
+    height: 250px;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0, 0.212) ;
+    cursor: pointer;
+    z-index: 10;
+    transition: all .4s;
+
+}
+
+.card:hover img{
+    margin-top: -30px;
+
+}
+
+.card:hover{
+    width:260px;
+}
+
+.card::before{
+    content: "5.10 climbing shoes";
+    letter-spacing: 0.2em;
+    position:absolute;
+    bottom: 8px;
+    left: 20px;
+    color: rgb(51,51,51);
+    font-size: 0.6em;
+    font-family:sans-serif;
+    font-weight:700;
+}
